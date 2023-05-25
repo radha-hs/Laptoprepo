@@ -1,0 +1,111 @@
+2023-02-20T11:47:58.504+05:30  INFO 24928 --- [main] c.e.c.LaptopDetailsApplication           : Starting LaptopDetailsApplication using Java 17.0.2 with PID 24928 (C:\Users\radha.hs\Desktop\STS project\LaptopDetails\target\classes started by radha.hs in C:\Users\radha.hs\Desktop\STS project\LaptopDetails)
+2023-02-20T11:47:58.511+05:30  INFO 24928 --- [main] c.e.c.LaptopDetailsApplication           : No active profile set, falling back to 1 default profile: "default"
+2023-02-20T11:47:59.228+05:30  INFO 24928 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-20T11:47:59.280+05:30  INFO 24928 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 1 JPA repository interfaces.
+2023-02-20T11:47:59.964+05:30  INFO 24928 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-02-20T11:47:59.975+05:30  INFO 24928 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-20T11:47:59.975+05:30  INFO 24928 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-02-20T11:48:00.091+05:30  INFO 24928 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-20T11:48:00.091+05:30  INFO 24928 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1527 ms
+2023-02-20T11:48:00.121+05:30  INFO 24928 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-02-20T11:48:00.398+05:30  INFO 24928 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:~/test user=SA
+2023-02-20T11:48:00.400+05:30  INFO 24928 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-02-20T11:48:00.409+05:30  INFO 24928 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/test'
+2023-02-20T11:48:00.948+05:30  INFO 24928 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-02-20T11:48:01.839+05:30  INFO 24928 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-20T11:48:02.229+05:30  WARN 24928 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-20T11:48:03.445+05:30  INFO 24928 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-02-20T11:48:03.455+05:30  INFO 24928 --- [main] c.e.c.LaptopDetailsApplication           : Started LaptopDetailsApplication in 5.382 seconds (process running for 6.087)
+2023-02-20T13:53:29.459+05:30  INFO 24928 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-20T13:53:29.460+05:30  INFO 24928 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-02-20T13:53:29.462+05:30  INFO 24928 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-02-20T13:53:29.571+05:30  INFO 24928 --- [http-nio-8080-exec-2] c.e.c.Logger.LaptopLogger                : method invokedclass com.example.crudlaptopdetails.Controller.LaptopController:getLaptop()arguments: [26]
+2023-02-20T13:53:29.572+05:30  INFO 24928 --- [http-nio-8080-exec-2] c.e.c.Logger.LaptopLogger                : method invokedclass com.example.crudlaptopdetails.Service.LaptopServiceImp:getLaptop()arguments: [26]
+2023-02-20T13:53:29.575+05:30  INFO 24928 --- [http-nio-8080-exec-2] c.e.c.Logger.LaptopLogger                : method invokedclass jdk.proxy2.$Proxy125:findById()arguments: [26]
+2023-02-20T13:53:29.731+05:30  INFO 24928 --- [http-nio-8080-exec-2] c.e.c.Logger.LaptopLogger                : class jdk.proxy2.$Proxy125:findById()Response: {"empty":false,"present":true}
+2023-02-20T13:53:29.736+05:30  INFO 24928 --- [http-nio-8080-exec-2] c.e.c.Logger.LaptopLogger                : class com.example.crudlaptopdetails.Service.LaptopServiceImp:getLaptop()Response: {"id":26,"name":"amida","location":"mumbai","phone":"9367292256","zipcode":562345}
+2023-02-20T13:53:29.759+05:30  INFO 24928 --- [http-nio-8080-exec-2] c.e.c.Logger.LaptopLogger                : class com.example.crudlaptopdetails.Controller.LaptopController:getLaptop()Response: {"headers":{},"body":{"id":26,"name":"amida","location":"mumbai","phone":"9367292256","zipcode":562345},"statusCode":"OK","statusCodeValue":200}
+2023-02-20T15:20:59.654+05:30  INFO 3684 --- [main] c.e.C.LaptopDetailsControllerTests       : Starting LaptopDetailsControllerTests using Java 17.0.2 with PID 3684 (started by radha.hs in C:\Users\radha.hs\Desktop\STS project\LaptopDetails)
+2023-02-20T15:20:59.655+05:30  INFO 3684 --- [main] c.e.C.LaptopDetailsControllerTests       : No active profile set, falling back to 1 default profile: "default"
+2023-02-20T15:20:59.795+05:30  INFO 3684 --- [main] c.e.C.LaptopDetailsControllerTests       : Started LaptopDetailsControllerTests in 0.527 seconds (process running for 1.81)
+2023-02-20T15:21:00.853+05:30  INFO 3684 --- [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2023-02-20T15:21:00.853+05:30  INFO 3684 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-02-20T15:21:00.854+05:30  INFO 3684 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2023-02-20T15:22:42.794+05:30  INFO 21164 --- [main] c.e.C.LaptopDetailsControllerTests       : Starting LaptopDetailsControllerTests using Java 17.0.2 with PID 21164 (started by radha.hs in C:\Users\radha.hs\Desktop\STS project\LaptopDetails)
+2023-02-20T15:22:42.795+05:30  INFO 21164 --- [main] c.e.C.LaptopDetailsControllerTests       : No active profile set, falling back to 1 default profile: "default"
+2023-02-20T15:22:42.931+05:30  INFO 21164 --- [main] c.e.C.LaptopDetailsControllerTests       : Started LaptopDetailsControllerTests in 0.505 seconds (process running for 1.796)
+2023-02-20T15:22:43.974+05:30  INFO 21164 --- [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2023-02-20T15:22:43.974+05:30  INFO 21164 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-02-20T15:22:43.975+05:30  INFO 21164 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2023-02-20T15:22:44.143+05:30  WARN 21164 --- [main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('%' (code 37)): expected a valid value (JSON String, Number, Array, Object or token 'null', 'true' or 'false')]
+2023-02-20T15:22:44.171+05:30  INFO 21164 --- [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2023-02-20T15:22:44.172+05:30  INFO 21164 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-02-20T15:22:44.172+05:30  INFO 21164 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2023-02-20T15:23:26.599+05:30  INFO 22728 --- [main] c.e.C.LaptopDetailsControllerTests       : Starting LaptopDetailsControllerTests using Java 17.0.2 with PID 22728 (started by radha.hs in C:\Users\radha.hs\Desktop\STS project\LaptopDetails)
+2023-02-20T15:23:26.601+05:30  INFO 22728 --- [main] c.e.C.LaptopDetailsControllerTests       : No active profile set, falling back to 1 default profile: "default"
+2023-02-20T15:23:26.745+05:30  INFO 22728 --- [main] c.e.C.LaptopDetailsControllerTests       : Started LaptopDetailsControllerTests in 0.532 seconds (process running for 1.778)
+2023-02-20T15:23:27.804+05:30  INFO 22728 --- [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2023-02-20T15:23:27.804+05:30  INFO 22728 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-02-20T15:23:27.805+05:30  INFO 22728 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2023-02-20T15:23:27.972+05:30  WARN 22728 --- [main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('%' (code 37)): expected a valid value (JSON String, Number, Array, Object or token 'null', 'true' or 'false')]
+2023-02-20T15:23:27.998+05:30  INFO 22728 --- [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2023-02-20T15:23:27.998+05:30  INFO 22728 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-02-20T15:23:27.998+05:30  INFO 22728 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2023-02-20T15:23:28.024+05:30  INFO 22728 --- [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2023-02-20T15:23:28.024+05:30  INFO 22728 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-02-20T15:23:28.025+05:30  INFO 22728 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2023-02-20T15:23:28.031+05:30  WARN 22728 --- [main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('%' (code 37)): expected a valid value (JSON String, Number, Array, Object or token 'null', 'true' or 'false')]
+2023-02-20T15:23:56.745+05:30  INFO 18876 --- [main] c.e.C.LaptopDetailsControllerTests       : Starting LaptopDetailsControllerTests using Java 17.0.2 with PID 18876 (started by radha.hs in C:\Users\radha.hs\Desktop\STS project\LaptopDetails)
+2023-02-20T15:23:56.747+05:30  INFO 18876 --- [main] c.e.C.LaptopDetailsControllerTests       : No active profile set, falling back to 1 default profile: "default"
+2023-02-20T15:23:56.886+05:30  INFO 18876 --- [main] c.e.C.LaptopDetailsControllerTests       : Started LaptopDetailsControllerTests in 0.521 seconds (process running for 1.8)
+2023-02-20T15:23:57.950+05:30  INFO 18876 --- [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2023-02-20T15:23:57.950+05:30  INFO 18876 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-02-20T15:23:57.952+05:30  INFO 18876 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2023-02-20T15:23:58.114+05:30  WARN 18876 --- [main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('%' (code 37)): expected a valid value (JSON String, Number, Array, Object or token 'null', 'true' or 'false')]
+2023-02-20T15:23:58.140+05:30  INFO 18876 --- [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2023-02-20T15:23:58.141+05:30  INFO 18876 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-02-20T15:23:58.141+05:30  INFO 18876 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2023-02-20T15:23:58.184+05:30  INFO 18876 --- [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2023-02-20T15:23:58.184+05:30  INFO 18876 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-02-20T15:23:58.184+05:30  INFO 18876 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2023-02-20T15:23:58.198+05:30  INFO 18876 --- [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2023-02-20T15:23:58.198+05:30  INFO 18876 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-02-20T15:23:58.198+05:30  INFO 18876 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2023-02-20T15:23:58.204+05:30  WARN 18876 --- [main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('%' (code 37)): expected a valid value (JSON String, Number, Array, Object or token 'null', 'true' or 'false')]
+2023-02-20T15:32:30.168+05:30  INFO 24996 --- [main] c.e.C.LaptopDetailsControllerTests       : Starting LaptopDetailsControllerTests using Java 17.0.2 with PID 24996 (started by radha.hs in C:\Users\radha.hs\Desktop\STS project\LaptopDetails)
+2023-02-20T15:32:30.171+05:30  INFO 24996 --- [main] c.e.C.LaptopDetailsControllerTests       : No active profile set, falling back to 1 default profile: "default"
+2023-02-20T15:32:30.309+05:30  INFO 24996 --- [main] c.e.C.LaptopDetailsControllerTests       : Started LaptopDetailsControllerTests in 0.519 seconds (process running for 1.82)
+2023-02-20T15:32:31.375+05:30  INFO 24996 --- [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2023-02-20T15:32:31.376+05:30  INFO 24996 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-02-20T15:32:31.376+05:30  INFO 24996 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2023-02-20T15:32:31.541+05:30  WARN 24996 --- [main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('%' (code 37)): expected a valid value (JSON String, Number, Array, Object or token 'null', 'true' or 'false')]
+2023-02-20T15:32:31.567+05:30  INFO 24996 --- [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2023-02-20T15:32:31.567+05:30  INFO 24996 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-02-20T15:32:31.567+05:30  INFO 24996 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2023-02-20T15:32:31.607+05:30  INFO 24996 --- [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2023-02-20T15:32:31.607+05:30  INFO 24996 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-02-20T15:32:31.607+05:30  INFO 24996 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2023-02-20T15:32:31.620+05:30  INFO 24996 --- [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2023-02-20T15:32:31.620+05:30  INFO 24996 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-02-20T15:32:31.620+05:30  INFO 24996 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2023-02-20T15:33:03.200+05:30  INFO 27028 --- [main] c.e.C.LaptopDetailsControllerTests       : Starting LaptopDetailsControllerTests using Java 17.0.2 with PID 27028 (started by radha.hs in C:\Users\radha.hs\Desktop\STS project\LaptopDetails)
+2023-02-20T15:33:03.202+05:30  INFO 27028 --- [main] c.e.C.LaptopDetailsControllerTests       : No active profile set, falling back to 1 default profile: "default"
+2023-02-20T15:33:03.339+05:30  INFO 27028 --- [main] c.e.C.LaptopDetailsControllerTests       : Started LaptopDetailsControllerTests in 0.511 seconds (process running for 1.818)
+2023-02-20T15:33:04.413+05:30  INFO 27028 --- [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2023-02-20T15:33:04.414+05:30  INFO 27028 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-02-20T15:33:04.414+05:30  INFO 27028 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2023-02-20T15:33:04.608+05:30  INFO 27028 --- [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2023-02-20T15:33:04.608+05:30  INFO 27028 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-02-20T15:33:04.609+05:30  INFO 27028 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2023-02-20T15:33:04.637+05:30  INFO 27028 --- [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2023-02-20T15:33:04.637+05:30  INFO 27028 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-02-20T15:33:04.638+05:30  INFO 27028 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2023-02-20T15:33:04.650+05:30  INFO 27028 --- [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2023-02-20T15:33:04.650+05:30  INFO 27028 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-02-20T15:33:04.650+05:30  INFO 27028 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2023-02-20T19:02:53.112+05:30  INFO 24928 --- [RMI TCP Connection(445)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-02-20T19:02:53.192+05:30  INFO 24928 --- [RMI TCP Connection(445)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-02-20T19:02:53.196+05:30  INFO 24928 --- [RMI TCP Connection(445)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-02-20T19:02:53.218+05:30  INFO 24928 --- [RMI TCP Connection(445)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-20T19:02:53.235+05:30  INFO 24928 --- [RMI TCP Connection(445)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-02-20T19:02:53.259+05:30  INFO 24928 --- [RMI TCP Connection(445)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
